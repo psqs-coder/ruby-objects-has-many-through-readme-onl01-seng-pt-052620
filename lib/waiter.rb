@@ -1,5 +1,10 @@
 class Waiter
   attr_accessor :name, :yrs_experience
+  def waiters
+    meals.map do |meal|
+      meal.waiter
+    end
+  end
   
   
   @@all = []
